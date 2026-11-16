@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cyber-llm-skills"
+version = "2.2.0"
+description = "cbh — terminal-native recon/classify/triage/report runner for the Cyber-LLM-Skills skill bundle"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "toor11" }]
+keywords = ["security", "bug-bounty", "recon", "claude", "pentest"]
+dependencies = []
+
+[project.optional-dependencies]
+# `requests` is optional — cbh falls back to urllib when it's absent.
+http = ["requests"]
+
+[project.urls]
+Homepage = "https://github.com/toor11/Cyber-LLM-Skills"
+Documentation = "https://github.com/toor11/Cyber-LLM-Skills/blob/main/docs/cbh-cli.md"
+
+[project.scripts]
+cbh = "cbh.cli:main"
+
+[tool.setuptools]
+packages = ["cbh"]
+
+[tool.setuptools.package-data]
+cbh = ["data/*.json"]

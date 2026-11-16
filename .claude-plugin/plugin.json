@@ -1,0 +1,12 @@
+{
+  "name": "cyber-llm-skills",
+  "description": "84-skill bug-hunting & external red-team bundle for Claude Code \u2014 58 hunt-* web/vuln-class + framework skills, enterprise platform attack chains (M365/Entra, Okta, SharePoint, vCenter, SSL-VPN, APK/iOS), recon/OSINT, reporting & validation gates, Burp MCP integration, PLUS the vendored cyber-monster router (W4L33Dx) routing to 785 full-spectrum red/blue-team sub-skills on disk. Skills auto-load by topic; 15 slash commands included.",
+  "version": "2.2.0",
+  "author": {
+    "name": "toor11",
+    "url": "https://github.com/toor11"
+  },
+  "homepage": "https://github.com/toor11/Cyber-LLM-Skills",
+  "repository": "https://github.com/toor11/Cyber-LLM-Skills",
+  "license": "MIT"
+}

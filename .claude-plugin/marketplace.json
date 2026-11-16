@@ -1,0 +1,39 @@
+{
+  "name": "toor11",
+  "owner": {
+    "name": "toor11",
+    "url": "https://github.com/toor11"
+  },
+  "metadata": {
+    "description": "Offensive-security skill bundles for Claude Code by ElementalSoul.",
+    "version": "2.2.0"
+  },
+  "plugins": [
+    {
+      "name": "cyber-llm-skills",
+      "source": "./",
+      "description": "84-skill bug-hunting & external red-team bundle \u2014 58 hunt-* web/vuln-class + framework skills, enterprise platform attack chains (M365/Entra, Okta, SharePoint, vCenter, SSL-VPN, APK/iOS), recon/OSINT, reporting & validation gates, Burp MCP integration, PLUS the vendored cyber-monster router (W4L33Dx) routing to 785 full-spectrum red/blue-team sub-skills on disk. Skills auto-load by topic; 15 slash commands.",
+      "version": "2.2.0",
+      "author": {
+        "name": "toor11",
+        "url": "https://github.com/toor11"
+      },
+      "homepage": "https://github.com/toor11/Cyber-LLM-Skills",
+      "category": "security",
+      "tags": [
+        "blue-team",
+        "bug-bounty",
+        "detection",
+        "forensics",
+        "hunt",
+        "offensive-security",
+        "osint",
+        "pentest",
+        "recon",
+        "red-team",
+        "security",
+        "threat-hunting"
+      ]
+    }
+  ]
+}

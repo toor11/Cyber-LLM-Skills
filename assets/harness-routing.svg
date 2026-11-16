@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 560" width="1080" height="560" role="img" aria-label="Graph: the cyber-llm-skills bundle routes through one installer to five agent harnesses, with a plugin route for Claude Code">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#08080d"/>
+      <stop offset="100%" stop-color="#0b1117"/>
+    </linearGradient>
+    <linearGradient id="agy-grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="50%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#9333ea"/>
+    </linearGradient>
+    <pattern id="grid" x="0" y="0" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#202230" stroke-width="0.8" opacity="0.5"/>
+    </pattern>
+    <marker id="arrow-plain" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#a5a6b4"/>
+    </marker>
+    <marker id="arrow-claude" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#D97757"/>
+    </marker>
+    <marker id="arrow-opencode" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#9aa0ae"/>
+    </marker>
+    <marker id="arrow-codex" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#4cc9f0"/>
+    </marker>
+    <marker id="arrow-hermes" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#f6b44b"/>
+    </marker>
+    <marker id="arrow-ag" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#a78bfa"/>
+    </marker>
+    <marker id="arrow-plugin" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#6b7280"/>
+    </marker>
+    <style>
+      .sans{font-family:-apple-system,BlinkMacSystemFont,"Inter","Segoe UI",sans-serif}
+      .mono{font-family:ui-monospace,"JetBrains Mono","IBM Plex Mono","SF Mono",Menlo,monospace}
+      .white{fill:#f7f7fb}
+      .muted{fill:#a5a6b4}
+      .dim{fill:#636475}
+      .red{fill:#ff2d4f}
+      .node{fill:#12131c;stroke-width:1.2}
+      .edge{fill:none;stroke-width:1.4}
+    </style>
+  </defs>
+
+  <rect width="1080" height="560" fill="url(#bg)"/>
+  <rect width="1080" height="560" fill="url(#grid)"/>
+
+  <text x="24" y="36" class="mono dim" font-size="12" font-weight="800" letter-spacing="2.2">HARNESS ROUTING — GRAPH</text>
+  <line x1="252" y1="32" x2="1056" y2="32" stroke="#1d1f2b"/>
+  <text x="1056" y="56" text-anchor="end" class="mono dim" font-size="12" letter-spacing="1.2">ONE BUNDLE → FIVE HARNESSES</text>
+
+  <!-- ================= source node ================= -->
+  <g>
+    <rect x="36" y="92" width="264" height="150" rx="8" class="node" stroke="#ff2d4f"/>
+    <circle cx="60" cy="118" r="5" fill="#ff2d4f"/>
+    <text x="76" y="123" class="mono white" font-size="14" font-weight="800">cyber-llm-skills</text>
+    <text x="56" y="143" class="mono dim" font-size="10" letter-spacing="1">github.com/toor11/Cyber-LLM-Skills</text>
+    <line x1="52" y1="156" x2="284" y2="156" stroke="#23242f"/>
+    <text x="56" y="178" class="mono muted" font-size="11.5">84 skills · 15 slash commands</text>
+    <text x="56" y="198" class="mono muted" font-size="11.5">engine/ · cbh · hunt</text>
+    <text x="56" y="218" class="mono dim" font-size="10.5">plain SKILL.md format</text>
+    <text x="56" y="234" class="mono dim" font-size="10.5">+ vendored cyber-monster router</text>
+  </g>
+
+  <!-- ================= installer node ================= -->
+  <g>
+    <rect x="392" y="104" width="272" height="126" rx="8" class="node" stroke="#3a3d4d"/>
+    <text x="412" y="130" class="mono dim" font-size="10" font-weight="800" letter-spacing="1.6">INSTALLER</text>
+    <line x1="408" y1="140" x2="648" y2="140" stroke="#23242f"/>
+    <text x="412" y="164" class="mono white" font-size="13"><tspan class="red" font-weight="800">$</tspan><tspan dx="8">scripts/install.sh</tspan></text>
+    <text x="412" y="186" class="mono muted" font-size="11.5">--all · --burp-mcp · --agents</text>
+    <text x="412" y="204" class="mono muted" font-size="11.5">detects harnesses present</text>
+  </g>
+
+  <!-- S -> I -->
+  <path d="M300 167 C 336 167, 356 167, 392 167" class="edge" stroke="#a5a6b4" marker-end="url(#arrow-plain)"/>
+
+  <!-- ================= plugin route ================= -->
+  <path d="M168 242 C 168 300, 340 316, 392 316" class="edge" stroke="#6b7280" stroke-dasharray="5 4" marker-end="url(#arrow-plugin)"/>
+  <g>
+    <rect x="392" y="272" width="272" height="110" rx="8" class="node" stroke="#3a3d4d"/>
+    <text x="412" y="296" class="mono dim" font-size="10" font-weight="800" letter-spacing="1.6">PLUGIN ROUTE — CLAUDE CODE</text>
+    <line x1="408" y1="306" x2="648" y2="306" stroke="#23242f"/>
+    <text x="412" y="328" class="mono muted" font-size="11">/plugin marketplace add</text>
+    <text x="412" y="344" class="mono muted" font-size="11">  toor11/Cyber-LLM-Skills</text>
+    <text x="412" y="364" class="mono muted" font-size="11">/plugin install cyber-llm-skills@toor11</text>
+  </g>
+
+  <!-- ================= harness nodes ================= -->
+  <!-- Claude Code -->
+  <path d="M664 132 C 706 132, 706 113, 742 113" class="edge" stroke="#D97757" marker-end="url(#arrow-claude)"/>
+  <g>
+    <rect x="742" y="78" width="314" height="70" rx="8" class="node" stroke="#D97757"/>
+    <text x="762" y="105" class="mono white" font-size="13" font-weight="800">Claude Code</text>
+    <text x="762" y="130" class="mono muted" font-size="11">~/.claude/skills/  ·  + namespaced plugin</text>
+  </g>
+
+  <!-- OpenCode (reads shared dir, no copy) -->
+  <path d="M664 152 C 710 152, 710 203, 742 203" class="edge" stroke="#9aa0ae" stroke-dasharray="5 4" marker-end="url(#arrow-opencode)"/>
+  <g>
+    <rect x="742" y="168" width="314" height="70" rx="8" class="node" stroke="#9aa0ae"/>
+    <text x="762" y="195" class="mono white" font-size="13" font-weight="800">OpenCode</text>
+    <text x="762" y="220" class="mono muted" font-size="11">reads ~/.claude/skills/ — no copy</text>
+  </g>
+
+  <!-- Codex CLI -->
+  <path d="M664 172 C 704 172, 706 293, 742 293" class="edge" stroke="#4cc9f0" marker-end="url(#arrow-codex)"/>
+  <g>
+    <rect x="742" y="258" width="314" height="70" rx="8" class="node" stroke="#4cc9f0"/>
+    <text x="762" y="285" class="mono white" font-size="13" font-weight="800">Codex CLI</text>
+    <text x="762" y="310" class="mono muted" font-size="11">~/.agents/skills/  (--agents)</text>
+  </g>
+
+  <!-- Hermes Agent -->
+  <path d="M664 192 C 700 192, 706 383, 742 383" class="edge" stroke="#f6b44b" marker-end="url(#arrow-hermes)"/>
+  <g>
+    <rect x="742" y="348" width="314" height="70" rx="8" class="node" stroke="#f6b44b"/>
+    <text x="762" y="375" class="mono white" font-size="13" font-weight="800">Hermes Agent</text>
+    <text x="762" y="400" class="mono muted" font-size="11">~/.hermes/skills/  (--hermes)</text>
+  </g>
+
+  <!-- Google AntiGravity -->
+  <path d="M664 212 C 696 212, 708 473, 742 473" class="edge" stroke="#a78bfa" marker-end="url(#arrow-ag)"/>
+  <g>
+    <rect x="742" y="438" width="314" height="70" rx="8" class="node" stroke="url(#agy-grad)" stroke-width="1.2"/>
+    <text x="762" y="465" class="mono white" font-size="13" font-weight="800">Google AntiGravity</text>
+    <text x="762" y="490" class="mono muted" font-size="11">~/.gemini/config/skills/  (--antigravity)</text>
+  </g>
+
+  <!-- ================= footer notes ================= -->
+  <line x1="36" y1="520" x2="1056" y2="520" stroke="#1d1f2b"/>
+  <text x="36" y="544" class="mono dim" font-size="10.5">solid = files copied · dashed = reads shared dir or marketplace route · --burp-mcp wires Burp into every detected harness</text>
+</svg>
